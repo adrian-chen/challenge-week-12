@@ -47,32 +47,31 @@
 
 ## Challenge 1
 
-[Screenshot your query and a result]
+[image](Mongo_CH1.png)
 
 ## Challenge 2
 
-[Query snippet]
-[Answer]
+> db.norm.aggregate([{"$match":{"DATE":{$regex:/20100425/}}},{"$group":{"_id":null,"Average Wind Speed: ":{"$avg":"$HLY-WIND-AVGSPD"}}}])
+
+9.27
 
 ## Challenge 3
 
-[Query snippet]
-[Answer]
+> db.reviews.aggregate([{"$match":{"type":"business","city":"Madison"}},{"$group":{"_id":null,"Reviews from Madison: ":{"$sum":"$review_count"}}}])
+
+34410 reviews
 
 ## Challenge 4
 
-[Query snippet]
-[Answer]
+> db.all.aggregate([{"$match":{"type":"business","city":"Las Vegas"}},{"$group": {"_id":null,"Reviews from Vegas: ":{"$sum":"$review_count"}}}])
+
+577550 reviews
 
 ## Challenge 5
 
-[Query snippet]
-[Answer]
+> db.all.aggregate([{"$match":{"type":"business","city":"Pheonix"}},{"$group":{"_id":null,"Reviews from Pheonix: ":{"$sum":"$review_count"}}}])
 
-## Challenge 6 [BONUS]
-
-[Code]
-[Answer]
+16 reviews
 
 
 
