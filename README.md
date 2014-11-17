@@ -47,7 +47,7 @@
 
 ## Challenge 1
 
-[image](Mongo_CH1.png)
+[!image](Mongo_CH1.png)
 
 ## Challenge 2
 
